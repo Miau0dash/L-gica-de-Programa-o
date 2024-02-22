@@ -1,0 +1,22 @@
+// Solicitar ao usuÃ¡rio os nÃºmeros inteiros representando os intervalos de tempo
+let horas1 = parseInt(prompt("Digite as horas do primeiro intervalo:"));
+let minutos1 = parseInt(prompt("Digite os minutos do primeiro intervalo:"));
+let segundos1 = parseInt(prompt("Digite os segundos do primeiro intervalo:"));
+
+let horas2 = parseInt(prompt("Digite as horas do segundo intervalo:"));
+let minutos2 = parseInt(prompt("Digite os minutos do segundo intervalo:"));
+let segundos2 = parseInt(prompt("Digite os segundos do segundo intervalo:"));
+
+// Calcular a soma dos intervalos
+let somaHoras = horas1 + horas2;
+let somaMinutos = minutos1 + minutos2;
+let somaSegundos = segundos1 + segundos2;
+
+// Calcular a diferenÃ§a dos intervalos
+let diferencaHoras = Math.abs(horas1 - horas2);
+let diferencaMinutos = Math.abs(minutos1 - minutos2);
+let diferencaSegundos = Math.abs(segundos1 - segundos2);
+
+// Exibir resultados
+console.log(`Soma dos intervalos: ${somaHoras} horas, ${somaMinutos} minutos, ${somaSegundos} segundos`);
+console.log(`DiferenÃ§a dos intervalos: ${diferencaHoras} horas, ${diferencaMinutos} minutos, ${diferencaSegundos} segundos`);
