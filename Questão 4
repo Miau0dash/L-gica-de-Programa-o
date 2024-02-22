@@ -1,0 +1,13 @@
+// Solicitar ao usuÃ¡rio um valor inteiro
+let valor = parseInt(prompt("Digite um valor inteiro maior ou igual a 0:"));
+
+// Verificar se o valor Ã© nÃ£o negativo
+if (valor >= 0) {
+    // Converter o valor para string e contar o nÃºmero de dÃ­gitos
+    let numeroDigitos = valor.toString().length;
+
+    // Exibir o resultado
+    console.log(`O nÃºmero de dÃ­gitos do valor ${valor} Ã©: ${numeroDigitos}`);
+} else {
+    console.log("Por favor, digite um valor inteiro maior ou igual a 0.");
+}
