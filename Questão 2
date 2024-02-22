@@ -1,0 +1,17 @@
+// Solicitar a quantidade de livros ao usuÃ¡rio
+let quantidadeLivros = parseInt(prompt("Digite a quantidade de livros desejada:"));
+
+// CritÃ©rio A: R$ 0,25 por livro + R$ 7,50 fixo
+let descontoA = 0.25 * quantidadeLivros + 7.50;
+
+// CritÃ©rio B: R$ 0,50 por livro + R$ 2,50 fixo
+let descontoB = 0.50 * quantidadeLivros + 2.50;
+
+// Determinar a melhor opÃ§Ã£o de desconto
+let melhorOpcao = descontoA < descontoB ? "A" : "B";
+
+// Exibir a melhor opÃ§Ã£o de desconto ao usuÃ¡rio
+console.log(`Quantidade de livros: ${quantidadeLivros}`);
+console.log(`Desconto no CritÃ©rio A: R$ ${descontoA.toFixed(2)}`);
+console.log(`Desconto no CritÃ©rio B: R$ ${descontoB.toFixed(2)}`);
+console.log(`Melhor opÃ§Ã£o de desconto: CritÃ©rio ${melhorOpcao}`);
