@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class ConsultaNomes {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita a quantidade de nomes a ser cadastrada
+        System.out.print("Quantos nomes deseja cadastrar? ");
+        int quantidade = scanner.nextInt();
+        scanner.nextLine(); // Consumir a nova linha após o número
+
+        // Cria um array para armazenar os nomes
+        String[] nomes = new String[quantidade];
+
+        // Lê os nomes do usuário
+        for (int i = 0; i < quantidade; i++) {
+            System.out.print("Digite o nome " + (i + 1) + ": ");
+            nomes[i] = scanner.nextLine();
+        }
+
+        // Pergunta ao usuário o número do nome que ele gostaria de consultar
+        System.out.print("Digite a posição do nome que deseja consultar (1 a " + quantidade + "): ");
+        int posicao = scanner.nextInt();
+
+        // Verifica se a posição é válida
+        if (posicao > 0 && posicao <= quantidade) {
+            System.out.println("O nome na posição " + posicao + " é: " + nomes[posicao - 1]);
+        } else {
+            System.out.println("Posição inválida! Escolha um número entre 1 e " + quantidade);
+        }
+
+        scanner.close();
+    }
+}
